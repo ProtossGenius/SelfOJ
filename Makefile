@@ -1,5 +1,6 @@
 ##Tail
 prebuild:
+	smdcatalog
 
 debug:
 build:

@@ -46,3 +46,11 @@
 6. 可以在主目录添加环境，调用python add '预期目录' 来自动化完成这一过程，脚本会将所有需要的发到指定目录，如果缺少内容会给出错误提示
 注意：题目描述文件名应该为`Problem.md`
 7. 除了经典题目外，请尽量不要添加能在网上OJ平台已有的题目
+
+# Catalog
+* [\<file>Program.md -> ./Program.md](./Program.md)
+
+# SubCatalog
+
+* [\<dir>HW -> ./HW](./HW/README.md)
+* [\<dir>HWHigh -> ./HWHigh](./HWHigh/README.md)

@@ -11,7 +11,13 @@ if len(args) < 1:
 
 target = args[0]
 if not os.path.exists(target):
-    os.makedirs(args[0])
+    os.makedirs(target)
+else:
+    str = raw_input('Dir exists rewrite it? [Y/n]:')
+    if str == 'n' or str == 'N':
+        print("Get N, Exit.")
+        exit(0)
+    
 cmds = ['cp ./time.limit ' + target,
         'cp ./Program.md ' + target + '/README.md',
         'cp ./*.in ' + target,

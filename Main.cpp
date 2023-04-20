@@ -1,20 +1,18 @@
 #include <algorithm>
+#include <cstring>
 #include <iostream>
+#include <map>
+#include <queue>
 #include <string>
 #include <vector>
 using namespace std;
-
-int main() {
-    string walk;
-    while (cin >> walk) {
-        int nums[ 200 ]{0};
-        for (char c : walk) {
-            nums[ int(c) ]++;
-        }
-        cout << (nums[ int('W') ] - nums[ int('S') ]) / 2 +
-                    (nums[ int('A') ] - nums[ int('D') ]) / 2
-             << endl;
-    }
-    return 0;
+#include <climits>
+int main(int argc, char *argv[]) {
+    long long ll = LLONG_MIN;
+    ll /= 2;
+    cout << ll << endl;
+    ll *= 2;
+    cout << ll << endl;
+    ll -= 1;
+    cout << ll << endl;
 }
-// 64 位输出请用 printf("%lld")

@@ -48,9 +48,8 @@
 7. 除了经典题目外，请尽量不要添加能在网上OJ平台已有的题目
 
 # Catalog
-* [\<file>Program.md -> ./Program.md](./Program.md)
+* [\<file>Program.md -> 最小的调整次数](./Program.md)
 
 # SubCatalog
 
-* [\<dir>HW -> ./HW](./HW/README.md)
-* [\<dir>HWHigh -> ./HWHigh](./HWHigh/README.md)
+* [\<dir>HWHigh -> 华为高频题目](./HWHigh/README.md)

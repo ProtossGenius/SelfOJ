@@ -5,7 +5,7 @@ prebuild:
 debug:
 build:
 	rm -f *.out
-	g++ Main.cpp
+	g++ -g -DONLY_TEST Main.cpp
 submit: build
 	@for f in `ls *.in`; do \
 		echo "\033[32m Running $$f \033[0m";\
@@ -22,7 +22,10 @@ submit: build
 
 qrun: build
 	timeout `cat time.limit` ./a.out < test.in > test.in.out 
-	diff test.in.out test.in.want
+	diff --color test.in.out test.in.want
+	@if [ $$? -ne 0 ]; then esit 1 ; fi; 
+	@echo '\033[36m Accept! \033[0m';
+
 test:
 
 install:

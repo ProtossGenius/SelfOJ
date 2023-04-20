@@ -48,7 +48,7 @@
 7. 除了经典题目外，请尽量不要添加能在网上OJ平台已有的题目
 
 # Catalog
-* [\<file>Program.md -> 最小的调整次数](./Program.md)
+* [\<file>Program.md -> 字符串重新排序](./Program.md)
 
 # SubCatalog
 

@@ -18,9 +18,17 @@ static _debug              debug;
 #endif
 
 int main(int argc, char *argv[]) {
-    char str[ 1005 ];
-    cin.getline(str, 1005);
-    map<string, int> count;
-
+    string a, b;
+    cin >> a >> b;
+    string ans;
+    for (int i = 0; i < a.length(); ++i) {
+        for (int j = i + ans.length(); j <= a.length(); ++j) {
+            string str = a.substr(i, j - i);
+            if (b.find(str) != string::npos) {
+                ans = str;
+            }
+        }
+    }
+    cout << ans << endl;
     return 0;
 }

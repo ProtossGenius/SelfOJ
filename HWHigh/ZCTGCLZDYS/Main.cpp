@@ -18,9 +18,20 @@ static _debug              debug;
 #endif
 
 int main(int argc, char *argv[]) {
-    char str[ 1005 ];
-    cin.getline(str, 1005);
-    map<string, int> count;
+    int         n;
+    vector<int> car;
 
+    while (cin >> n) {
+        car.push_back(n);
+    }
+    int nums[ 5 ]{0};
+    int ans = 0;
+    for (int i = 0; i < car.size() - 1; ++i) {
+        nums[ car[ i ] ]++;
+        if (i >= n) nums[ car[ i - n ] ]--;
+        ans = max(ans, nums[ car[ i ] ]);
+    }
+
+    cout << ans << endl;
     return 0;
 }
